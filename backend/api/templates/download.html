@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <a href="download?did={{ did }}">
+    {% csrf_token %}
+    Hit it baby, one more time
+  </a>
+{% endblock %}
